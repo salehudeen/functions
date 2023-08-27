@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
@@ -15,8 +16,8 @@ app.post('/send-email', async (req, res) => {
     
       service: 'Gmail',
       auth: {
-        user: 'hlprplatform@gmail.com',
-        pass: 'nagzkhbdglrsqeop',
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
       debug: true, // Enabling debugging
       logger: true, // Enabling logging
