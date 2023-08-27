@@ -63,8 +63,8 @@ app.post('/send-contact-email', async (req, res) => {
         // Configure your email service and credentials here
         service: 'Gmail',
         auth: {
-          user: 'hlprplatform@gmail.com',
-          pass: 'nagzkhbdglrsqeop',
+          user: process.env.EMAIL_USER,
+          pass: process.env.EMAIL_PASS,
         },
         debug: true, // Enable debugging
         logger: true, // Enable logging
