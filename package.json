@@ -1,14 +1,15 @@
 {
-  "name": "pli-server", 
+  "name": "pli-server",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "nodemailer": "^6.9.4"
   },
   "scripts": {
-    "start": "node server.js", 
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
